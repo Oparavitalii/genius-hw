@@ -1,0 +1,47 @@
+@import "../../scss/mixins";
+
+.about {
+  &__wrapper {
+    @include fspace;
+    gap: 40px;
+  }
+
+  &__text {
+    max-width: 700px;
+  }
+  &__header {
+    max-width: 510px;
+    margin-bottom: 40px;
+  }
+  &__text-f,
+  &__text-s {
+    font-size: 22px;
+    line-height: 38px;
+    margin-bottom: 40px;
+  }
+  &__effect {
+    flex-basis: 0;
+    max-width: 500px;
+  }
+  &__images {
+    max-width: 500px;
+    position: relative;
+
+    .stars {
+      position: absolute;
+    }
+    .star1 {
+      top: 50%;
+      left: 30%;
+    }
+    .star2 {
+        right: 0;
+        top:0
+    }
+
+    .star3 {
+        right: 3%;
+        top:40%;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "fonts";
+@import "default";
+@import "normalize";
+@import "../components/header/style";
+@import "../components/main/style";
+@import "../components/about/style";
+@import "../components/unique/style";
+@import "../components/procedures/style";
+@import "../components/contact/style";
+@import "../components/footer/style";
+.wrapper__hm {
+  background: linear-gradient(
+      89deg,
+      #fff 30.62%,
+      rgba(255, 255, 255, 0.85) 41.31%,
+      rgba(255, 255, 255, 0.19) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url(../../images/main.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.highlight {
+   
+        color: $main_color;
+    
+}

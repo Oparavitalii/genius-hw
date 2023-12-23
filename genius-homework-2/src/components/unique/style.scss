@@ -1,0 +1,38 @@
+@import "../../scss/mixins";
+
+
+.unique {
+    padding-top: 170px;
+    background-image: url(../../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__wrapper{
+        
+    }
+    &__header {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    &__cards {
+        @include fspace;
+        
+
+
+    }
+    &__card {
+        height: 180px;
+        padding: 24px 32px;
+        background-color: #fff;
+        box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+        border-radius: 32px;
+    }
+    &__text {
+        max-width: 252px;
+        
+        text-align: center;
+    }
+    svg {
+        margin: 0 auto;
+        @include fcenter;
+    }
+}

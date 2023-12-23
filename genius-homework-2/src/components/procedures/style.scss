@@ -1,0 +1,46 @@
+@import "../../scss/mixins";
+
+
+.procedures {
+ 
+    &__wrapper{
+        
+    }
+    &__header {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__cards {
+        @include fspace;
+        gap:10px;
+        align-items: center;
+        margin-bottom: 40px;
+        svg {
+            align-self: center;
+            max-width: 44px;
+            max-height: 44px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &__card {
+        img {
+            width: 100%;
+            max-width: 344px;
+        }
+    }
+    &__dots {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+    &__dot {
+        width: 10px;
+        height: 10px;
+        border: 1px solid #747272;
+        background-color:#747272;
+        border-radius: 50%;
+    }
+}
