@@ -1,0 +1,46 @@
+@import "../../scss/mixins";
+
+.footer {
+    background-color: $second-color;
+    background-image: url(../../images/background.png);
+    position: relative;
+    padding: 48px 0px;
+    color:#fff;
+    a {
+        color:#fff;
+        margin-bottom: 16px;
+      
+    }
+    &__back {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    &__wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    }
+    &__contact {
+        display:flex;
+        flex-direction: column;
+    }
+    &__logo {
+        color: $main-color;
+    }
+    &__nav {
+        ul {
+            padding: 0;
+            margin:0;
+        }
+        li {
+            margin-bottom: 16px;
+        }
+    }
+    &__contacts-items {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+  
+}

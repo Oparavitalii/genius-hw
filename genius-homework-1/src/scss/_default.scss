@@ -1,0 +1,115 @@
+@import "mixins";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: Play;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Epilogue", sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+  transition: 7s all linear;
+}
+.button {
+
+  display: flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 32px;
+  border: none;
+  background: $main-color;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+}
+h1 {
+  color: $main-color;
+  text-transform: capitalize;
+}
+h2 {
+  color: $second_color;
+  font-size: 64px;
+}
+
+a,
+p {
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+section {padding: 48px 0px;}
+

@@ -1,0 +1,91 @@
+@import "../../scss/mixins";
+
+.header {
+  padding: 48px 0;
+  &__wrapper {
+    @include fspace;
+  }
+  &__logo {
+    font-size: 22px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $main-color;
+  }
+
+  &__nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: 56px;
+  }
+  &__nav-item {
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      color: $second_color;
+
+      &:hover {
+        color: $main_color;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    column-gap: 32px;
+  }
+  &__burger {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+
+    &-line {
+      background-color: #333;
+      height: 3px;
+      width: 100%;
+      transition: background-color 0.3s ease;
+
+      &:nth-child(2) {
+        width: 80%;
+      }
+
+      &:last-child {
+        width: 60%;
+      }
+    }
+  }
+
+  // Media queries for responsive design
+  @media (max-width: 768px) {
+    .header__burger {
+      display: block;
+    }
+    .header__nav {
+      display: none; // Show the navigation for mobile devices
+    }
+
+    .header__nav-list {
+      text-align: center;
+      margin-top: 10px;
+
+      .header__nav-item {
+        display: block;
+        margin: 10px 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .header__burger {
+      display: flex; // Show the burger menu icon for mobile devices
+    }
+  }
+}

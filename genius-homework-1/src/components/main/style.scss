@@ -1,0 +1,29 @@
+@import "../../scss/mixins";
+.main {
+
+    
+  &__wrapper {
+    margin-left: 10%;
+  }
+  &__header {
+    font-size: 140px;
+    line-height: 81%;
+    margin: 0 auto 40px auto;
+  }
+  &__name {
+    color: $second_color;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  .button {
+    margin-bottom: 20px;
+  }
+  &__text {
+    width: 237px;
+    color: $beauty-landing-2-c3;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
